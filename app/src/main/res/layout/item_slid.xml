@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dl.swipelistviewdemo.view.SwipeListLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slid_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#66ff0000"
+            android:gravity="center"
+            android:text="置顶" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#330000ff"
+            android:gravity="center"
+            android:text="删除" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/iv_delete"
+            android:src="@mipmap/sign_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:padding="5dp"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="王子"
+                />
+            <TextView
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="吃饭了吗"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</com.dl.swipelistviewdemo.view.SwipeListLayout>
